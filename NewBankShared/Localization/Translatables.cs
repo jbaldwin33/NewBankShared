@@ -252,4 +252,9 @@ namespace NewBankShared.Localization
     public ErrorOccurredTranslatable(string error) : base(error) { }
     protected override string GetDefaultTransalationBasisText() => "An error occurred: {0}";
   }
+
+  public class SessionInvalidLoggingOutTranslatable : Translatable
+  {
+    protected override string GetDefaultTransalationBasisText() => "The current session is invalid. You will be logged out.";
+  }
 }
