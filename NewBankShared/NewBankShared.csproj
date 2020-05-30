@@ -1,0 +1,11 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="xcopy /Y &quot;E:\VSProjects\NewBankShared\assemblies\*&quot; &quot;E:\VSProjects\NewBankClient\NewBankWpfClient\bin\Debug\netcoreapp3.1&quot;&#xD;&#xA;xcopy /Y &quot;E:\VSProjects\NewBankShared\NewBankShared\bin\Debug\netcoreapp3.1\*&quot; &quot;E:\VSProjects\NewBank\NewBankServer\bin\Debug\netcoreapp3.1&quot;&#xD;&#xA;xcopy /Y &quot;E:\VSProjects\NewBankShared\NewBankShared\bin\Debug\netcoreapp3.1\*&quot; &quot;E:\VSProjects\NewBankClient\NewBankWpfClient\bin\Debug\netcoreapp3.1&quot;" />
+  </Target>
+
+</Project>
