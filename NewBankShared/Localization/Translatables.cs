@@ -257,4 +257,9 @@ namespace NewBankShared.Localization
   {
     protected override string GetDefaultTransalationBasisText() => "The current session is invalid. You will be logged out.";
   }
+
+  public class SaveTranslatable : Translatable
+  {
+    protected override string GetDefaultTransalationBasisText() => "Save";
+  }
 }
